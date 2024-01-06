@@ -62,7 +62,7 @@ export default function Login() {
             <img
               width="70%"
               height="70%"
-              src="https://firebasestorage.googleapis.com/v0/b/iotmarket-10501.appspot.com/o/logo.jpg?alt=media&token=562f373b-6b97-459e-8dd0-1dffac4f9092"
+              src="https://firebasestorage.googleapis.com/v0/b/datn-26027.appspot.com/o/logo.jpg?alt=media&token=40062244-432b-4c10-b885-ce40c33f5eb7"
               alt="/"
             />
           </div>
