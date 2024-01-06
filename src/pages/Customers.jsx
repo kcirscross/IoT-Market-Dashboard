@@ -55,7 +55,7 @@ const Orders = () => {
 
   const handleBanRequest = async () => {
     const response = await axios({
-      url: `https://iotmarket.herokuapp.com/api/v1/admin/ban/${userId}`,
+      url: `http://192.168.1.202:3000/api/v1/admin/ban/${userId}`,
       method: 'patch',
       headers: {
         Authorization: 'Bearer ' + token,
@@ -92,7 +92,7 @@ const Orders = () => {
 
   const handleUnbanRequest = async () => {
     const response = await axios({
-      url: `https://iotmarket.herokuapp.com/api/v1/admin/unban/${userId}`,
+      url: `http://192.168.1.202:3000/api/v1/admin/unban/${userId}`,
       method: 'patch',
       headers: {
         Authorization: 'Bearer ' + token,
@@ -132,7 +132,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       const response = await axios({
-        url: `https://iotmarket.herokuapp.com/api/v1/user`,
+        url: `http://192.168.1.202:3000/api/v1/user`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,

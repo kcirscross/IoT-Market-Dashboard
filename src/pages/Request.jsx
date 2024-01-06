@@ -50,7 +50,7 @@ const Request = () => {
   const handleOnCellClick = async (params) => {
     if (params.field === 'action' && params.value === 2) {
       const response = await axios({
-        url: `https://iotmarket.herokuapp.com/api/v1/admin/request/${params.id}`,
+        url: `http://192.168.1.202:3000/api/v1/admin/request/${params.id}`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,
@@ -75,7 +75,7 @@ const Request = () => {
       });
     else {
       const response = await axios({
-        url: `https://iotmarket.herokuapp.com/api/v1/admin/reject/${requestId}`,
+        url: `http://192.168.1.202:3000/api/v1/admin/reject/${requestId}`,
         method: 'patch',
         headers: {
           Authorization: 'Bearer ' + token,
@@ -116,7 +116,7 @@ const Request = () => {
 
   const handleAcceptRequest = async () => {
     const response = await axios({
-      url: `https://iotmarket.herokuapp.com/api/v1/admin/approve/${requestId}`,
+      url: `http://192.168.1.202:3000/api/v1/admin/approve/${requestId}`,
       method: 'patch',
       headers: {
         Authorization: 'Bearer ' + token,
@@ -252,7 +252,7 @@ const Request = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       const response = await axios({
-        url: `https://iotmarket.herokuapp.com/api/v1/admin/request`,
+        url: `http://192.168.1.202:3000/api/v1/admin/request`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,

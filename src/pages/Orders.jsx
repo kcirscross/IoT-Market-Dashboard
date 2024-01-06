@@ -146,7 +146,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       const response = await axios({
-        url: `https://iotmarket.herokuapp.com/api/v1/order`,
+        url: `http://192.168.1.202:3000/api/v1/order`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,
