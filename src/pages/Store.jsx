@@ -194,7 +194,7 @@ const Store = () => {
   useEffect(() => {
     const fetchStore = async () => {
       const response = await axios({
-        url: `http://192.168.1.202:3000/api/v1/store/${path}`,
+        url: `http://192.168.1.201:3000/api/v1/store/${path}`,
         method: 'get',
       });
 
@@ -203,7 +203,7 @@ const Store = () => {
 
     const fetchProducts = async () => {
       const response = await axios({
-        url: `http://192.168.1.202:3000/api/v1/product/user/${path}`,
+        url: `http://192.168.1.201:3000/api/v1/product/user/${path}`,
         method: 'get',
       });
 
@@ -212,7 +212,7 @@ const Store = () => {
 
     const fetchOrders = async () => {
       const response = await axios({
-        url: `http://192.168.1.202:3000/api/v1/order/store/${path}`,
+        url: `http://192.168.1.201:3000/api/v1/order/store/${path}`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,

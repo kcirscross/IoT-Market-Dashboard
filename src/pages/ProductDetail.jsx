@@ -23,7 +23,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       const response = await axios({
-        url: `http://192.168.1.202:3000/api/v1/product/admin/${path}`,
+        url: `http://192.168.1.201:3000/api/v1/product/admin/${path}`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,
@@ -33,7 +33,7 @@ const ProductDetail = () => {
     };
     const fetchReviews = async () => {
       const response = await axios({
-        url: `http://192.168.1.202:3000/api/v1/review/admin/${path}`,
+        url: `http://192.168.1.201:3000/api/v1/review/admin/${path}`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,

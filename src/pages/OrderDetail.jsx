@@ -24,7 +24,7 @@ const OrderDetail = () => {
       dispatch(ORDER_DETAIL_REQUEST());
       try {
         const response = await axios({
-          url: `http://192.168.1.202:3000/api/v1/order/detailAdmin/${path}`,
+          url: `http://192.168.1.201:3000/api/v1/order/detailAdmin/${path}`,
           method: 'get',
           headers: {
             Authorization: 'Bearer ' + token,

@@ -47,7 +47,7 @@ const StoreList = () => {
   useEffect(() => {
     const fetchStores = async () => {
       const response = await axios({
-        url: `http://192.168.1.202:3000/api/v1/store/`,
+        url: `http://192.168.1.201:3000/api/v1/store/`,
         method: 'get',
         headers: {
           Authorization: 'Bearer ' + token,

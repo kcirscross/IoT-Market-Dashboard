@@ -25,7 +25,7 @@ export default function Login() {
       dispatch(loginStart());
       try {
         const response = await axios({
-          url: `http://192.168.1.202:3000/api/v1/auth/signin`,
+          url: `http://192.168.1.201:3000/api/v1/auth/signin`,
           method: 'post',
           data: {
             email,
